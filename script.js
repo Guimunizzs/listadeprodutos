@@ -24,4 +24,17 @@ document.addEventListener("DOMContentLoaded", () => {
     formContainer.style.display = "none";
     listContainer.style.display = "block";
   });
+
+  function renderProducts() {
+    productList.innerHTML = products
+      .map(
+        (product) => `
+          <tr>
+            <td>${product.name}</td>
+            <td>R$ ${product.price.toFixed(2)}</td>
+          </tr>
+        `
+      )
+      .join("");
+  }
 });
