@@ -35,3 +35,7 @@ form input[type="number"] {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+form input[type="radio"] {
+  margin-right: 5px;
+}
