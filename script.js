@@ -17,4 +17,7 @@ productForm.addEventListener("submit", (event) => {
 
   const name = document.getElementById("name").value;
   const price = parseFloat(document.getElementById("price").value);
+
+  products.push({ name, price });
+  products.sort((a, b) => a.price - b.price);
 });
