@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("new-product").addEventListener("click", () => {
     formContainer.style.display = "block";
     listContainer.style.display = "none";
+    productForm.reset();
   });
 
   productForm.addEventListener("submit", (event) => {
