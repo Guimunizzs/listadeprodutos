@@ -6,3 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const productForm = document.getElementById("product-form");
   const productList = document.getElementById("product-list");
 });
+
+document.getElementById("new-product").addEventListener("click", () => {
+  formContainer.style.display = "block";
+  listContainer.style.display = "none";
+});
