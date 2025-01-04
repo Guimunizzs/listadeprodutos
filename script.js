@@ -20,4 +20,8 @@ productForm.addEventListener("submit", (event) => {
 
   products.push({ name, price });
   products.sort((a, b) => a.price - b.price);
+
+  renderProducts();
+  formContainer.style.display = "none";
+  listContainer.style.display = "block";
 });
