@@ -1,0 +1,150 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #e0f7fa; /* Cor de fundo suave */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333; /* Cor do texto */
+}
+
+/* Contêiner principal */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px;
+  padding: 30px;
+  background-color: #ffffff; /* Cor de fundo branca para o conteúdo */
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Formulário */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00796b; /* Cor de destaque */
+  font-size: 16px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #00796b;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #f1f8e9; /* Cor de fundo suave para os campos */
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Estilo para quando o campo está em foco */
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #004d40; /* Cor de borda mais escura no foco */
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* Estilo do botão */
+form button {
+  width: 100%;
+  background-color: #00796b;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #004d40; /* Cor de fundo mais escura no hover */
+}
+
+form button:active {
+  background-color: #00332d; /* Cor de fundo ao pressionar */
+}
+
+/* Listagem de Produtos */
+#list-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+}
+
+th {
+  background-color: #00796b;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: #f1f8e9;
+  border: 1px solid #ccc;
+}
+
+button#new-product {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#new-product:hover {
+  background-color: #004d40;
+}
+
+/* Animação de fade-in para o conteúdo */
+#list-container,
+#form-container {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
