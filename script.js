@@ -14,4 +14,7 @@ document.getElementById("new-product").addEventListener("click", () => {
 
 productForm.addEventListener("submit", (event) => {
   event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const price = parseFloat(document.getElementById("price").value);
 });
