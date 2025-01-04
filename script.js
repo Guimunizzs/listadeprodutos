@@ -11,3 +11,7 @@ document.getElementById("new-product").addEventListener("click", () => {
   formContainer.style.display = "block";
   listContainer.style.display = "none";
 });
+
+productForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+});
