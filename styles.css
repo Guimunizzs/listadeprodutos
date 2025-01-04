@@ -18,3 +18,10 @@ form {
   max-width: 400px;
   box-sizing: border-box;
 }
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
